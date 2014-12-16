@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:background="@color/purple_dark"
+    android:baselineAligned="false" >
+
+   <TextView
+       android:id="@+id/navmenusection_label"
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_gravity="left"
+       android:background="@android:color/darker_gray"
+       
+       android:gravity="center"
+       android:paddingBottom="7dp"
+       android:paddingTop="7dp"
+       android:text="Section"
+       android:textColor="#FFFFFF"
+       android:textSize="16sp" />
+
+</LinearLayout>
+<!-- style="?android:attr/listSeparatorTextViewStyle" -->
+<!-- style="?attr/DropDownNav.Style" -->

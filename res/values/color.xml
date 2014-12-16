@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#d4886a</color>
+    <color name="list_background_pressed">#199faf</color>
+    <color name="list_divider">#B0B0B0</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="white_color">#FFFFFF</color>
+    
+    <!-- Dropdown Color -->
+    <color name="purple_light">#a276eb</color> 
+    <color name="purple_middle">#8658ce</color>
+    <color name="purple_dark">#6a3ab2</color>
+    
+    
+    <color name="mycolor">#803315</color>
+</resources>

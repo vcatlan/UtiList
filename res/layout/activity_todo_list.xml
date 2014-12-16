@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:padding="10dp"
+    android:background="@color/counter_text_color"
+    tools:context="com.example.utilist.TodoListActivity" >
+	
+    <LinearLayout
+        android:id="@+id/todo_list_linearLayout_adding"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white_color"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/todo_list_editText_add"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:hint="@string/add_shopping_list_hint"
+            android:lines="1"
+            android:singleLine="true" >
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/todo_list_imageViewLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@drawable/ic_action_cancel"
+            android:tag="R.drawable.ic_action_cancel"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/todo_list_imageViewRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@drawable/ic_action_ok"
+            android:tag="R.drawable.ic_action_ok"
+            android:visibility="gone" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/todo_list_LinearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/todo_list_linearLayout_adding"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_color"
+                android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/todo_list_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+    </LinearLayout>
+</RelativeLayout>

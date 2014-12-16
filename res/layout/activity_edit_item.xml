@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/counter_text_color"
+    android:textAlignment="center"
+    tools:context=".EditItemActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/dialog_shopping_item_button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/ab_solid_style"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/dialog_shopping_item_button_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ab_solid_style"
+            android:text="@string/save"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ab_bottom_solid_style"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_delete" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_margin="10dp"
+        android:background="@color/white_color"
+        android:gravity="clip_horizontal"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/editTextItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imageViewPlusQty"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/editTextQuantity"
+            android:layout_toRightOf="@+id/editTextQuantity"
+            android:src="@drawable/ic_action_plus" />
+
+        <Spinner
+            android:id="@+id/spinnerItemType"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageViewPlusQty"
+            android:layout_alignTop="@+id/imageViewPlusQty"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageViewPlusQty"
+            android:entries="@array/type" />
+
+        <EditText
+            android:id="@+id/editTextQuantity"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageViewMinusQty"
+            android:layout_alignTop="@+id/imageViewMinusQty"
+            android:layout_toRightOf="@+id/imageViewMinusQty"
+            android:ems="10"
+            android:inputType="number"
+            android:text="1"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageViewPriceHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editTextItemPrice"
+            android:layout_toRightOf="@+id/imageViewPlusQty"
+            android:src="@drawable/ic_clock" />
+
+        <TextView
+            android:id="@+id/textViewDisplayTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextItemName"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/dailog_quantity"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/imageViewMinusQty"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewDisplayTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_action_minus" />
+
+        <EditText
+            android:id="@+id/editTextItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textViewDisplayPrice"
+            android:layout_below="@+id/textViewDisplayPrice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textViewDisplayPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewDisplayTitle"
+            android:layout_below="@+id/imageViewPlusQty"
+            android:layout_marginTop="20dp"
+            android:text="@string/unitPriceLabel"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_margin="10dp"
+        android:background="@color/white_color"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/editTextItemNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewNotesLabel"
+            android:ems="10"
+            android:hint="@string/notesHint"
+            android:background="@drawable/apptheme_edit_text_holo_light" />
+
+        <TextView
+            android:id="@+id/textViewNotesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/notesLabel"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

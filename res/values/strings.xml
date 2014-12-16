@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UtiList</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- Navigation Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Sign In or Register</item>
+        <item>To-Do List</item>
+        <item>Friends</item>
+        <item>Shared List</item>
+        <item>Settings</item>
+        <item>About</item>
+    </string-array>
+
+    <!-- List Item Icons(Images) with strings(text of company name) -->
+    <!-- Keep them with titles array accordingly -->
+    <array name="nav_drawer_icons">
+        <item>ic_action_profile</item>
+        <item>ic_action_lists</item>
+        <item>ic_action_menu_friends</item>
+        <item>ic_action_shared</item>
+        <item>ic_action_menu_settings</item>
+        <item>ic_action_menu_about</item>
+    </array>
+
+    <!-- drawer_list_item Imageview Description -->
+    <string name="description_list_icon">Item Icon</string>
+    <string name="login_editText_email_hint">Email</string>
+    <string name="login_editText_password_hint">Password</string>
+    <string name="login_button_login">Log In</string>
+    <string name="login_button_signup">Sign up</string>
+    <string name="signup_editText_email_hint">Email</string>
+    <string name="signup_editText_password_hint">Password</string>
+    <string name="signup_editText_confirm_password_hint">Confirm Password</string>
+    <string name="signup_editText_firstName_hint">First Name</string>
+    <string name="signup_editText_lastName">Last Name</string>
+    <string name="signup_button_return_login">Sign up later</string>
+    <string name="signup_button_singup">Create Account</string>
+    <string name="dailog_quantity">QUANTITY</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="unitPriceLabel">UNIT PRICE</string>
+    <string name="category">CATEGORY</string>
+    <string name="add_item_hint">Add Item</string>
+    <string name="title_activity_friends_list">Friends List</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="notesLabel">NOTES</string>
+    <string name="notesHint">Notes</string>
+    <string name="title_activity_edit_item">Edit Shopping Item</string>
+    <string name="buttonShareLabel">SHARE</string>
+    <string name="addFriendLabel">Add Friend</string>
+    <string name="totalLabel">Total:</string>
+    <string name="remainingLabel">Remaining:</string>
+    <string name="title_activity_shopping_list">Manage Shopping Lists</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_shopping_list_hint">Add Shopping List</string>
+
+    <!-- Type -->
+    <string-array name="type">
+        <item name="none">none</item>
+        <item name="each">each</item>
+        <item name="piece">piece</item>
+        <item name="bag">bag</item>
+        <item name="bottle">bottle</item>
+        <item name="piece">box</item>
+        <item name="case">case</item>
+        <item name="pack">pack</item>
+        <item name="jar">jar</item>
+        <item name="can">can</item>
+        <item name="bunch">bunch</item>
+        <item name="roll">roll</item>
+        <item name="dozen">dozen</item>
+        <item name="small">small</item>
+        <item name="larg">larg</item>
+        <item name="qt">qt</item>
+        <item name="oz">oz</item>
+        <item name="cup">cup</item>
+        <item name="gallon">gallon</item>
+        <item name="tbsp">tbsp</item>
+        <item name="tsp">tsp</item>
+        <item name="g">g</item>
+        <item name="kg">kg</item>
+    </string-array>
+
+    <string name="title_activity_scan">Scan</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logOut">Log Out</string>
+    <string name="title_activity_todo_list_main">To-Do List</string>
+    <string name="title_activity_todo_list">Manage To-Do Lists</string>
+    <string name="title_activity_edit_todo_list">Edit To-Do Item</string>
+    <string name="reminder_lable">REMINDER</string>
+    <string name="title_activity_about">About UtiList</string>
+    <string name="shareListLabel">Share List</string>
+    <string name="title_activity_shared_list_by_friend">Shared List By Friend</string>
+    <string name="title_activity_view_shared_list">View Shared List</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="Internet">This app requires Internet connectivity.</string>
+
+</resources>

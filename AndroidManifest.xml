@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.utilist"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.example.utilist.ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.utilist.LogInActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.SignUpActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.FriendsListActivity"
+            android:label="@string/title_activity_friends_list" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.EditItemActivity"
+            android:label="@string/title_activity_edit_item" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.ShoppingListActivity"
+            android:label="@string/title_activity_shopping_list" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.ScanActivity"
+            android:label="@string/title_activity_scan" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.TodoListMainActivity"
+            android:label="@string/title_activity_todo_list_main" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.TodoListActivity"
+            android:label="@string/title_activity_todo_list" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.EditTodoListItemActivity"
+            android:label="@string/title_activity_edit_todo_list" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.SharedListByFriendActivity"
+            android:label="@string/title_activity_shared_list_by_friend" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.ViewSharedListActivity"
+            android:label="@string/title_activity_view_shared_list" >
+        </activity>
+        <activity
+            android:name="com.example.utilist.SplashScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
