@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
 	android:padding="10dp"
     android:background="@color/counter_text_color"
-    tools:context="com.example.utilist.ShoppingListActivity" >
+    tools:context="com.android.utilist.ShoppingListActivity" >
 	
     <LinearLayout
         android:id="@+id/shopping_list_linearLayout_adding"

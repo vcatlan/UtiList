@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/counter_text_color"
-    tools:context="com.example.utilist.FriendsListActivity" >
+    tools:context="com.android.utilist.FriendsListActivity" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
